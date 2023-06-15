@@ -29,7 +29,7 @@ Embrace your journey, noble alchemist. The fate of the realm is closely tied to 
 Let the Alchemist&#39;s Quest begin.
 
 [[Continue (3/3)-&gt;EnterName]]</tw-passagedata><tw-passagedata pid="4" name="EnterName" tags="" position="75,1550" size="100,100">Enter your player name
-(input-box:2bind $playerName,&quot;XXX=======&quot;,1,&quot;Persivald&quot;)
+(input-box:2bind $playerName,&quot;XXXXX=====&quot;,1,&quot;Persivald&quot;)
 [[Continue-&gt;EnterHouse]]</tw-passagedata><tw-passagedata pid="5" name="EnterHouse" tags="" position="75,1675" size="100,100">After countless moonlit nights, $playerName, your path leads you to the outskirts of a bustling trading town, where the town&#39;s life-force is a vibrant market at its very center.
 On the edge of this lively settlement, an old house stands. It has been weathered more by time than by human touch. Its façade, covered with overgrown greenery, whispers stories of its long-gone residents. But for you, it could mark the start of a new chapter. &#39;&#39;Welcome home, alchemist.&#39;&#39; This is where your true quest begins.
 
@@ -47,6 +47,7 @@ In small towns like this one, rumors spread like wildfire. The locals look at yo
 [[Continue-&gt;HouseStartChoice]]</tw-passagedata><tw-passagedata pid="11" name="HouseStartChoice" tags="" position="325,1425" size="100,100">After a night of restful sleep and a simple meal made up of the last of your biscuits, you find yourself in quiet contemplation. What next?
 
 [[Delve into the aged notes and materials discovered in the cellar-&gt;Delve1]]
+
 [[]]
 </tw-passagedata><tw-passagedata pid="12" name="Delve1" tags="" position="450,1125" size="100,100">Days spent poring over the dusty records unveil a wealth of information: chilling experiments, priceless recipes, and even some outlawed potions. Importantly, the final entries hint at attempts to develop a cure for the plague. However, they also present a new hurdle: a rare ingredient, referred to as $ingredientName, is crucial. The search for this mysterious ingredient begins.
 
@@ -61,15 +62,124 @@ In small towns like this one, rumors spread like wildfire. The locals look at yo
 You can stay home and craft potions for sale, ensuring livelihood and making local connections, or embark on a quest to find the elusive ingredient $ingredientName
 
 [[Craft Potions-&gt;Craft1]]
-[[Embark on a quest-&gt;Embark2]]</tw-passagedata><tw-passagedata pid="16" name="Craft1" tags="" position="950,725" size="100,100">The process stretched into the evening and seeped into the night. Exhausted, you finally surrendered to the soothing arms of sleep, allowing yourself a few precious hours of rest. Now, a fresh morning unfolds, vibrant and full of promise. Your potions, carefully crafted, stand ready for the day ahead!
+
+[[Embark on a quest-&gt;Child1]]</tw-passagedata><tw-passagedata pid="16" name="Craft1" tags="" position="950,725" size="100,100">The process stretched into the evening and seeped into the night. Exhausted, you finally surrendered to the soothing arms of sleep, allowing yourself a few precious hours of rest. Now, a fresh morning unfolds, vibrant and full of promise. Your potions, carefully crafted, stand ready for the day ahead!
 
 You may now head to the market to sell your concoctions, then set off in search of the ingredient.
 
-[[Head to the market-&gt;Market1]]</tw-passagedata><tw-passagedata pid="17" name="Embark2" tags="" position="950,925" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Market1" tags="" position="1075,650" size="100,100">Here you stand, $playerName, right in the heart of the bustling marketplace! As you navigate through the crowd, you can&#39;t help but notice the cautious, disapproving looks thrown your way. Whispers fill the air as you pass by, and children point and shout, &quot;Mama, Mama, look, it&#39;s the...,&quot; their voices trailing off as they meet your gaze and quickly turn away.
+[[Head to the market-&gt;Market1]]</tw-passagedata><tw-passagedata pid="17" name="Child1" tags="" position="950,925" size="100,100">So, $playerName, you find yourself in the bustling market! You can&#39;t help but notice the disapproving glances and hushed whispers from the people as you pass by. Children point fingers and shout, &quot;&quot;Mom, look!&quot; When your eyes meet theirs, they quickly look away.
+In that very moment, you feel a hand rummaging through your pocket. Swiftly, you turn around to see a young boy who seems to have attempted to rob you.
+
+[[</tw-passagedata><tw-passagedata pid="18" name="Market1" tags="" position="1075,650" size="100,100">Here you stand, $playerName, right in the heart of the bustling marketplace! As you navigate through the crowd, you can&#39;t help but notice the cautious, disapproving looks thrown your way. Whispers fill the air as you pass by, and children point and shout, &quot;Mama, Mama, look, it&#39;s the...,&quot; their voices trailing off as they meet your gaze and quickly turn away.
 
 [[Continue-&gt;Market2]]</tw-passagedata><tw-passagedata pid="19" name="Market2" tags="" position="1075,525" size="100,100">Undeterred, you find a spot in the busy market. With utmost care, you showcase your finely crafted potions, confidently explaining their names and effects. Despite the hesitant glances and murmured words, you spot a calloused, dirt-stained hand reaching out for one of your potions – your first customer, a humble farmer.
 
-[[Continue-&gt;Market3]]</tw-passagedata><tw-passagedata pid="20" name="Market3" tags="" position="1075,400" size="100,100">While you feel confident in the quality of your potions, you remain uncertain about their price. Typically, a potion like this would be valued at 5 silver coins. However, the final decision rests in your hands.</tw-passagedata></tw-storydata>
+[[Continue-&gt;Market3]]</tw-passagedata><tw-passagedata pid="20" name="Market3" tags="" position="1075,400" size="100,100">While you feel confident in the quality of your potions, you remain uncertain about their price. Typically, a potion like this would be valued at 5 silver coins. However, the final decision rests in your hands.
+
+[[Continue-&gt;Market4]]</tw-passagedata><tw-passagedata pid="21" name="Market4" tags="" position="1200,525" size="100,100">You can either offer below-market price - 4 silver coins. &quot;Money will come and go, this man can make better use of it.&quot;
+
+Or sell the potion at the market price - 5 coins. There&#39;s no competition, no need to negotiate, nor to pity this poor soul!
+
+Or you can try to haggle for 7 silver coins. Being the only potion seller here, you can set any price, and you could certainly use the extra coin!
+
+Sell for
+
+[[4 coins-&gt;4Coins1]]
+[[5 coins-&gt;5Coins1]]
+[[7 coins-&gt;7Coins1]]</tw-passagedata><tw-passagedata pid="22" name="4Coins1" tags="" position="1325,350" size="100,100">You&#39;ve gained a loyal customer, and at least one friend in this unfamiliar town. During your conversation, you opened up about your laboratory, your research, and the crucial ingredient you seek. The man is deeply moved by your story of a family ravaged by the plague and your unwavering determination to find a cure. &quot;Follow me..&quot; he says.
+
+[[Follow him-&gt;FollowGood1]]</tw-passagedata><tw-passagedata pid="23" name="5Coins1" tags="" position="1325,500" size="100,100">You&#39;ve made the sale, and the old man went his own way.
+
+[[Continue-&gt;FollowBad1]]</tw-passagedata><tw-passagedata pid="24" name="7Coins1" tags="" position="1325,600" size="100,100">he customer got furious, accusing you of trying to rip him off. His loud protest attracted attention. Embarrassed, you ask the man &quot;What will you pay?&quot; To end the brewing scandal, you sold your potion for a mere 3 silver coins. At least you&#39;ve made some money.
+
+[[Continue-&gt;FollowBad1]] </tw-passagedata><tw-passagedata pid="25" name="FollowGood1" tags="" position="1450,350" size="100,100">Your new friend leads you to the black market, until you reach the very stall you&#39;ve been seeking. And there it is, right before your eyes! The ingredient you&#39;ve been desperately searching for! The price tag is steep, a hefty sum of 10 gold pieces!
+
+You don&#39;t have the funds to buy it. You decide to go back home and craft more potions for sale
+
+[[Return Home-&gt;BackHome1]]</tw-passagedata><tw-passagedata pid="26" name="BackHome1" tags="" position="1575,350" size="100,100">News spreads swiftly in close-knit towns, and your act of kindness towards the pauper has not gone unnoticed. A small queue now forms at your door, with townsfolk seeking your assistance.
+
+[[Continue-&gt;BackHome2]]</tw-passagedata><tw-passagedata pid="27" name="BackHome2" tags="" position="1575,225" size="100,100">Among the farmers, a well-groomed man with a lingering fragrance pushes his way through the crowd. His voice trembles with desperation as he cries, &quot;My father is on the verge of death! Please, I beg you, help save him!&quot; Despite cutting to the front of the line, no one protests, their gazes averted to the ground.
+
+[[Continue-&gt;BackHome3]]</tw-passagedata><tw-passagedata pid="28" name="BackHome3" tags="" position="1700,225" size="100,100">Moved by his plea, you extend an invitation into your home. Once inside, he reveals the grave illness afflicting his father, the esteemed Lord Mayor. The elder is trapped in a state of suffering, unable to pass on. The mysterious guest begs you to craft a lethal potion to end his father&#39;s torment. In exchange, he offers a substantial sum of money and vows to keep your involvement a secret.
+
+You recall encountering such potion recipes while studying the forbidden materials left in your house.
+
+What will you do?
+
+[[Craft Potion-&gt;BadBoy1]]
+
+[[Refuse-&gt;GoodBoy1]]</tw-passagedata><tw-passagedata pid="29" name="BadBoy1" tags="" position="1825,225" size="100,100">Though I may question the morality of such an act... the old man&#39;s fate seems sealed regardless. By crafting this lethal potion, I could acquire the necessary funds for the ingredient,&quot; you ponder.
+
+[[Continue-&gt;BadBoy2]]</tw-passagedata><tw-passagedata pid="30" name="GoodBoy1" tags="" position="1700,100" size="100,100">&quot;Who am I to play God, and decide when someone should die? No, I will find a way to earn the money and save everyone without breaking any divine laws,&quot; you determine.
+
+[[Continue-&gt;GoodBoy2]]</tw-passagedata><tw-passagedata pid="31" name="GoodBoy2" tags="" position="1575,100" size="100,100">You dismissed the son of the Mayor and turned your attention to the rest of the crowd. It became apparent that they had come seeking remedies. The plague had reached your town, and the people hoped for some relief from its symptoms.
+
+[[Continue-&gt;GoodBoy3]]</tw-passagedata><tw-passagedata pid="32" name="GoodBoy3" tags="" position="1575,0" size="100,100">Throughout the day and night, you tirelessly brewed potions for the elderly and the young, doing your best to help the villagers. However, the poor townsfolk had little to offer, especially during these challenging times. Some contributed what little money they had left, while others brought valuable possessions, or even food.
+
+[[Continue-&gt;GoodBoy4]]</tw-passagedata><tw-passagedata pid="33" name="GoodBoy4" tags="" position="1700,0" size="100,100">By nightfall, after brewing the last potion for the day, exhaustion overcame you, and you fell into a deep sleep. The following morning, you awoke to the news that the town was under quarantine. No one could enter or leave as the plague continued to spread rapidly. You realized that by only treating the symptoms and not addressing the source, valuable time was slipping away. You had not even earned half the sum required for the necessary ingredient, leaving little time for further research.
+
+[[Continue-&gt;GoodBoy5]]</tw-passagedata><tw-passagedata pid="34" name="GoodBoy5" tags="" position="1825,0" size="100,100">In despair, you consider to assist the Mayor&#39;s son after all. Alternatively, you could work relentlessly without breaks for sleep or meals, in hopes to earn enough for the ingredient, and save at least one person..
+
+What will you do?
+
+[[Help Mayor&#39;s son-&gt;BadBoy1]] 
+
+[[Work hard-&gt;GoodBoy6]]</tw-passagedata><tw-passagedata pid="35" name="GoodBoy6" tags="" position="1950,0" size="100,100">The plague has swept through the entire town, leaving no one untouched. The wealthy were able to escape, but the authorities abandoned the peasants. With no more food supplies coming in, it is only a matter of time before the last resident takes their final breath. Trade has come to a halt, and even the purest gold ornaments hold no value, as they cannot be exchanged for even a morsel of bread.
+
+The town is now under strict quarantine, and nobody can enter or leave. You begin experiencing the symptoms of the plague, and you understand your inevitable fate. Such a pity that you didn&#39;t make it in time...
+
+Mission failed.</tw-passagedata><tw-passagedata pid="36" name="BadBoy2" tags="" position="1950,225" size="100,100">With the deadly potion complete, hastily prepared and forsaking all other tasks, you raced to the black market and sought out that familiar stall. As you made your way through the streets, you couldn&#39;t help but notice the once lively town now deserted. The townspeople, seeking refuge from the plague, remained hidden in their homes. Instead, the streets filled with the bodies of those who didn&#39;t have a home, or never made it there... The air was thick with the putrid smell of rotting flesh and waste, while the streets filled with agonized cries and desperate pleas for help, or death.
+
+[[Continue-&gt;BadBoy3]]</tw-passagedata><tw-passagedata pid="37" name="BadBoy3" tags="" position="2075,225" size="100,100">You made it just in time. Phew! The seller was already preparing to pack up the stall. Using the money obtained from the poison, you buy the desired ingredient. Now, perhaps, you could brew the potion to cure the plague and save at least one life...
+
+[[Head home and brew the plague cure potion-&gt;Prison1]]</tw-passagedata><tw-passagedata pid="38" name="Prison1" tags="" position="2200,225" size="100,100">As you approach your home, you notice a crowd again. But wait, what&#39;s this? Coming closer, you see torches and pitchforks. This is no line of beggars at your doorstep, but instead, an enraged mob. They shout, &quot;There he is, grab him!&quot;
+
+[[Continue-&gt;Prison2]]</tw-passagedata><tw-passagedata pid="39" name="Prison2" tags="" position="2200,100" size="100,100">Before you can react, you are seized, bound, and taken to a dungeon! It turns out that the Mayor&#39;s son has falsely accused you. He claimed that you provided him with poison instead of medicine, resulting in the Mayor&#39;s untimely death. With the city now lacking a leader during these dire times, suspicions towards you, the stranger, run deep.
+
+[[Continue-&gt;Prison3]]</tw-passagedata><tw-passagedata pid="40" name="Prison3" tags="" position="2325,225" size="100,100">Unfortunately, nobody believes your side of the story.
+
+You are in the dungeon. The people demand a trial at dawn. What will you do?
+
+You can wait for the trial to try to justify yourself.
+There still are a few coins from your sales in your pocket, so you can try to buy your freedom
+Alternatively, you can try to escape from the prison
+
+[[Wait for the trial-&gt;Trial1]]
+
+[[Buy your freedom-&gt;Buying1]]
+
+[[Escape from prison-&gt;PrisonBreak1]]</tw-passagedata><tw-passagedata pid="41" name="Trial1" tags="" position="2450,100" size="100,100">At dawn, you are escorted to the gallows. The crowd gathers slowly, anticipating a trial that will surely end in your execution. However, to everyone&#39;s surprise, the humble farmer whom you once aided by crafting medicine for his wife appears. He shares a heartfelt tale of your kindness and selflessness, recounting how you helped not only him but also their fellow neighbors. He insists upon your innocence and pure intentions. The crowd is deeply moved by his words, and their voices unite in calling for your pardon.
+
+Miraculously, you are released! Overwhelmed with relief, you race back home. There, you prepare the long-awaited cure with utmost determination. Despite the odds stacked against you, you manage to complete your mission and save the town from the devastating plague!</tw-passagedata><tw-passagedata pid="42" name="Buying1" tags="" position="2450,225" size="100,100">The judge, known to be corrupt, deems your funds inadequate. Perhaps it was a mistake to spend so much on the costly ingredient? Confined to the dungeon, weariness finally takes hold, and you become aware of an unsettling sensation. &quot;Could it be a fever? How did I not notice these spots on my stomach before...?&quot;
+
+[[Continue-&gt;Buying2]]</tw-passagedata><tw-passagedata pid="43" name="PrisonBreak1" tags="" position="2450,350" size="100,100">Luckily, the bars of the dungeon have decayed over time, and the guard is preoccupied with drinking to notice your timely escape. You seize the opportunity and break free. Fleeing through the deserted streets under the cover of darkness, you approach the first house you encounter and urgently knock on its door, seeking refuge.
+
+[[Knock-&gt;PrisonBreak2]]</tw-passagedata><tw-passagedata pid="44" name="Buying2" tags="" position="2575,225" size="100,100">Now, in the chilling and damp dungeon, lying on the bare ground, and battling a fever, you face the possibility of execution in the morning.
+
+However, your hidden coins are still with you...
+
+You chose between asking for a piece of bread and water for the coins to survive, and using the remaining coins to ask the guard for a pen and inkwell, and then pass a note with instructions on how to prepare the cure, as well as the remaining ingredient, to the poor old farmer you once helped earlier.
+
+You don&#39;t know if you will survive tomorrow or even make it till morning...
+
+[[Ask for food-&gt;BuyFood1]]
+
+[[Pass the note-&gt;PassTheNote1]]</tw-passagedata><tw-passagedata pid="45" name="BuyFood1" tags="" position="2725,175" size="100,100">You survive until the trial, where you will try to justify yourself before the jury.
+
+[[Continue-&gt;Trial1]] </tw-passagedata><tw-passagedata pid="46" name="PassTheNote1" tags="" position="2725,300" size="100,100">Consequences: As the sun rose, $playerName was declared guilty and executed.
+
+The guard dutifully followed your instructions.
+
+Sadly, in those times, literacy was a luxury, especially among the impoverished farmers. Thus, the farmer was unable to read your note, and had no one to ask for help. $playerName perished, taking the recipe with them. The mission ultimately ended in failure.</tw-passagedata><tw-passagedata pid="47" name="PrisonBreak2" tags="" position="2450,450" size="100,100">The door creaks open, revealing the weathered face of an old man. Moonlight casts a familiar glow upon his features. &quot;What luck!&quot; It&#39;s the same poor farmer whose wife you once aided with one of your well-crafted potions! You explain the dire situation to him, and to your relief, he believes every word. Before the break of dawn, he assists you in sneaking back into your laboratory to resume work on the potion to cure the devastating plague.
+
+[[Continue-&gt;PrisonBreak3]] </tw-passagedata><tw-passagedata pid="48" name="PrisonBreak3" tags="" position="2450,550" size="100,100">However, by the time morning arrives, your absence is discovered. Your attempt to escape is seen as undeniable proof of your guilt! Without a fair trial, you are promptly led to the gallows. Yet, there is no fear in your heart, for you have entrusted all the instructions to the old man, ensuring the completion of the potion. As you face your impending fate, you hold no regrets.
+
+Over the next few days, the potion proves to be successful, and the old man becomes the keeper of your story. You are hailed as a hero, with tales and songs echoing your name throughout the land.
+
+You have completed your mission. It is a tribute to the memory of your beloved mother and little brother.</tw-passagedata><tw-passagedata pid="49" name="FollowBad1" tags="" position="1475,525" size="100,100">You&#39;ve earned a few coins! Now, off to find the ingredient. You&#39;ve asked around, but people either shy away from you or rudely deny any knowledge, calling you a witch&#39;s spawn...
+Eventually, a suspicious-looking man approaches. He&#39;s heard what you&#39;re looking for. After a glance around, he leans in closer and whispers that he knows where to find it, inviting you to follow him.
+
+[[Follow him-&gt;FollowBad2]] </tw-passagedata><tw-passagedata pid="50" name="FollowBad2" tags="" position="1600,525" size="100,100">After you followed the man, he led you to a secluded spot where a couple of his acquaintances were waiting. Turns out, the strange man saw you get the coins for your potion. They tried to rob you, but you resisted. In the struggle, one of them stabbed you in the gut, causing the others to panic. They snatched your coins and fled, leaving you bleeding out. $playerName perished. Mission failed.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
